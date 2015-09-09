@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serin Yoon</title>
+	<link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+	<header>
+    <div id="logo"><img src="./static/imgs/logo1.png"/></div>
+    <div id="divider"><img src="./static/imgs/divbar.png"/></div>
+    <div id="contact">
+      <ul>
+        <li>linkedin/codepen/github: serinyoon</li>
+        <li>syoon17@illinois.edu</li>
+        <li>www.serinyoon.com</li>
+      </ul>
+    </div>
+  </header>
+
+	<div class="section-name">education</div>
+	<section id="education">
+		<div class="item">
+			<div class="date">{{ data.education.graduation }}</div>
+			<div class="title">{{ data.education.school }}</div>
+			<div class="gpa">{{ data.education.gpa }}</div>
+			<div class="subtitle">{{ data.education.degree }}</div>
+			<div class="courses">
+				<b>Relevant Courses: </b>
+				{% for i in data.education.courses %}
+				  {{ i.name }}
+					{% if i.current %}
+					<span>*</span>
+					{% endif %}
+					{% if i != data.education.courses[data.education.courses|length-1] %}
+					,
+					{% endif %}
+				{% endfor %}
+				<span class="annotation">(* currently enrolled)</span>
+			</div>
+		</div>
+	</section>
+
+	<div class="section-name">experience</div>
+	<section id="experience">
+		{% for i in data.experience %}
+		<div class="item">
+			<div class="date">{{ i.date }}</div>
+			<div class="title">{{ i.company }}</div>
+			<div class="subtitle">{{ i.location }} - {{ i.title }}</div>
+			<div class="detail">
+				<ul>
+					{% for d in i.details %}
+						<li>{{ d }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		{% endfor %}
+
+	<div class="section-name">projects</div>
+	<section id="projects">
+		{% for i in data.projects %}
+		<div class="item">
+			<div class="date">{{ i.date }}</div>
+			<div class="title">{{ i.title }}</div>
+			<div class="detail">
+				<ul>
+					{% for d in i.details %}
+						<li>{{ d }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		{% endfor %}
+	</section>
+
+	<div class="section-name">Extracurricular Activities</div>
+	<section id="extra">
+		<div class="item">
+			<div class="date">June, 2013</div>
+			<div class="title">Mission Mongolia</div>
+			<div class="subtitle">Ulaanbaatar, Mongolia - CS/English Instructor</div>
+			<div class="detail">
+				<ul>
+					<li>Instructed two 80-minute classes as a part of intensive summer camp for rising seniors at Huree
+						University of Information and Communication Technology in tri-lingual environment</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="date">August, 2012 - May, 2013</div>
+				<div class="title">Korean Student Association</div>
+				<div class="subtitle">University of Illinois - Assistant Director, Tech Team</div>
+				<div class="detail">
+					<ul>
+						<li>Developed and maintained a website (illinoisksa.org) for KSA, local Korean community</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<div class="section-name">Skills</div>
+		<section id="skills">
+			<div class="skill">
+				<span>Programming: </span>
+				{% for i in data.skills.programming %}
+					{{ i }}
+					{% if i != data.skills.programming[data.skills.programming|length-1] %}
+					,
+					{% endif %}
+				{% endfor %}
+			</div>
+			<div class="skill familiar">
+				<span>Familiar with: </span>
+				{% for i in data.skills.familiar %}
+					{{ i }}
+					{% if i != data.skills.familiar[data.skills.familiar|length-1] %}
+					,
+					{% endif %}
+				{% endfor %}
+			</div>
+			
+			<div class="skill">
+				<span>Design: </span>
+				{% for i in data.skills.design %}
+					{{ i }}
+					{% if i != data.skills.design[data.skills.design|length-1] %}
+					,
+					{% endif %}
+				{% endfor %}
+			</div>
+
+			<div class="skill">
+				<span>Language: </span>
+				{% for i in data.skills.language %}
+					{{ i }}
+					{% if i != data.skills.language[data.skills.language|length-1] %}
+					,
+					{% endif %}
+				{% endfor %}
+			</div>
+		</section>
+	</body>
+	</html>

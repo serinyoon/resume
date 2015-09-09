@@ -1,0 +1,141 @@
+{
+  "education" : {
+    "school" : "University of Illinois at Urbana-Champaign",
+    "degree" : "Bachelor of Science, Computer Science",
+    "graduation" : "December, 2015",
+    "gpa" : "3.30/4.00",
+    "courses" : [
+      {
+        "name" : "Data Driven Design",
+        "current" : true
+      },
+      {
+        "name" : "User Interface Design",
+        "current" : false
+      },
+      {
+        "name" : "Art and Science of Web Programming",
+        "current" : false
+      },
+      {
+        "name" : "Algorithms and Models of Computation",
+        "current" : false
+      },
+      {
+        "name" : "Natural Language Processing",
+        "current" : true
+      },
+      {
+        "name" : "Programming Languages and Compilers",
+        "current" : false
+      },
+      {
+        "name" : "Systems Programming",
+        "current" : false
+      },
+      {
+        "name" : "Database Systems",
+        "current" : false
+      },
+      {
+        "name" : "Distributed Systems",
+        "current" : false
+      }
+    ]
+},
+
+  "experience" : [
+    {
+      "company" : "Cleo",
+      "location" : "Chicago, Illinois",
+      "title" : "Software Engineer Intern",
+      "date" : "May, 2015 - August, 2015",
+      "details" : [
+        "Designed and implemented product usage metrics system with over 3 million data sets",
+        "Implemented dataflow of automated data ingestion system with Python scripts that migrate and merge data from various sources, validate and transforms into JSON, then fed into Elasticsearch for indexing and visualizing"
+      ]
+    },
+    {
+      "company" : "Intelligent Medical Objects",
+      "location" : "Champaign, Illinois",
+      "title" : "Software Engineer Intern",
+      "date" : "August, 2014 - May, 2015",
+      "details" : [
+        "Implemented patient chart for tracking patient records, such as diagnosis, treatment, and prescription",
+        "Drafted the UI prototype of an app that enforces coherent design across three different platforms (web, Android, iOS)"
+      ]
+    },
+    {
+      "company" : "Student Affairs Marketing",
+      "location" : "Champaign, Illinois",
+      "title" : "Student Intern, User Experience/Graphic Design",
+      "date" : "May, 2012 - May, 2013",
+      "details" : [
+        "Maintained the Student Affairs website (studentaffairs.illinois.edu) under two supervisors",
+        "Created paper and online publications to promote on-campus events and campaigns directed by Student Affairs and its branches"
+      ]
+    }
+  ],
+
+  "projects" : [
+    {
+      "title" : "Crowd Research",
+      "date" : "June, 2015 - August, 2015",
+      "details" : [
+        "Crowdsourced research hosted by Stanford on crowdsouring platforms, such as Mechanical Turk and ODesk, to diagnose existing issues and to build an improve platform"
+      ]
+    },
+    {
+      "title" : "Textbook Exchange",
+      "date" : "May, 2015 - August, 2015",
+      "details" : [
+        "Collaborated with students with different disciplines (Computer Science, Business Management and Graphic design) to create an online hub that allows students to buy and sell textbooks",
+        "Designed and implemented data models, RESTful API for the backend, and client side UI"
+      ]
+    },
+    {
+      "title" : "Sherrand",
+      "date" : "October, 2014 - December, 2014",
+      "details" : [
+        "Created a ride-sharing web app that is targeted towards college students based on locality and demand"
+      ]
+    },
+    {
+      "title" : "Fault Tolerant Distributed Key-Value Store",
+      "date" : "September, 2014 - November, 2014",
+      "details" : [
+        "Implemented a distributed fault-tolerant key-value store using all-to-all membership protocol with emphasis on accuracy and completeness"
+      ]
+    }
+  ],
+
+  "skills" : {
+    "programming" : [
+      "Python", 
+      "HTML", 
+      "CSS (SASS)", 
+      "JavaScript", 
+      "AngularJS", 
+      "NodeJS",  
+      "MongoDB",
+      "Elasticsearch", 
+      "Flask"
+    ],
+    "familiar" : [
+      "C",
+      "C++",
+      "Java",
+      "Swift"
+    ],
+    "design" : [
+      "Illustrator",
+      "Photoshop", 
+      "InDesign"
+    ],
+    "language" : [
+      "English",
+      "Korean"
+    ]
+
+  }
+}
