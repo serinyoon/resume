@@ -10,10 +10,9 @@
     <div id="divider"><img src="./static/imgs/black.png" height="65px" width="1px"/></div>
     <div id="contact">
       <ul>
-        <li>linkedin/codepen/github: serinyoon</li>
-        <li>syoon17@illinois.edu</li>
-        <li>www.serinyoon.com</li>
-        <li>(201)783-5047</li>
+      	{% for i in data.contact %}
+		  <li>{{ i }}</li>
+		{% endfor %}
       </ul>
     </div>
   </header>
